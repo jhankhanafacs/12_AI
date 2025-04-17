@@ -46,6 +46,10 @@
     13. LSTAT    % lower status of the population
     14. MEDV     Median value of owner-occupied homes in $1000's
 
+
+
+https://www.geeksforgeeks.org/house-price-prediction-using-machine-learning-in-python/
+
 8. Missing Attribute Values:  None.
 
 
