@@ -8,6 +8,14 @@ dataframe = read_csv(url, header=None)
 #dataframe=pd.read_csv(‘housing.csv’)
 data = dataframe.values
 # split into inputs and outputs
+'''Explanation:
+🔹 data[:, :-1] → This selects all rows (:) and all columns except the last one (:-1).
+This is your input features (independent variables).
+It becomes X, your features matrix.
+🔹 data[:, -1] → This selects all rows (:) and only the last column (-1).
+This is your target variable (dependent variable).
+It becomes y, your labels vector.
+'''
 X, y = data[:, :-1], data[:, -1] #data[:, :-1] → This selects all rows (:) and all columns except the last one (:-1) , data[:, -1] → This selects all rows (:) and only the last column (-1)
 print(X.shape, y.shape)
 # split into train test sets
